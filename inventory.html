@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Expedia Motors - Inventario</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+	
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+	
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">	
+	
+	<!-- Library - Google Font Familys -->	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+	
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="css/plugins.css">	
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<div class="main-container">
+		<!-- Loader -->
+		<div id="site-loader" class="load-complete">
+			<div class="loader">
+				<div class="loader-inner ball-clip-rotate">
+					<div></div>
+				</div>
+			</div>
+		</div><!-- Loader /- -->
+		
+		<!-- Header Section -->
+		<header id="header" class="header-section container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<!-- Top Header -->
+				<div class="top-header container-fluid no-padding">
+					<div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+						<a href="#"><img src="images/chat-ic.png" alt="Chat" /><span>Haz clic para</span><b>Chatear</b></a>
+						<a href="#"><img src="images/phone-ic.png" alt="Phone" /><span>Llámanos al</span><b>1-800-23-456-7890</b></a>
+						<ul>
+							<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div><!-- Top Header /- -->		
+				<!-- nav -->
+				<nav class="navbar navbar-default ow-navigation">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Alternar navegación</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+					</div>
+					<!-- Menu Icon -->
+					<div class="menu-icon">
+						<div class="search">	
+							<a href="#" id="search" title="Buscar"><img src="images/search-ic.png" alt="Buscar" /></a>
+						</div>
+					</div><!-- Menu Icon /- -->
+					<div class="navbar-collapse collapse navbar-right" id="navbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html" title="Inicio">Inicio</a></li>
+							<li><a href="about.html" title="Nosotros">Nosotros</a></li>
+							<li class="active"><a href="inventory.html" title="Inventario">Inventario</a></li>
+							<li><a href="vende.html" title="Vende tu auto">Vende tu auto</a></li><li><a href="parte-de-pago.html" title="Parte de pago">Parte de pago</a></li><li class="nav-cta"><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+							<li><a href="contactus.html" title="Contacto">Contacto</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</nav><!-- nav /- -->
+				<!-- Search Box -->
+				<div class="search-box">
+					<span><i class="icon_close"></i></span>
+					<div class="sb-ai-panel">
+						<div class="sb-ai-inner">
+							<div class="sb-ai-header">
+								<div class="sb-ai-header-info">
+									<div class="sb-ai-avatar-hdr"><i class="fa fa-car"></i></div>
+									<div>
+										<div class="sb-ai-header-titulo">Expedia Motors</div>
+										<div class="sb-ai-header-sub"><span class="sb-ai-dot"></span> Asistente en l&#237;nea</div>
+									</div>
+								</div>
+							</div>
+							<div id="sb-mensajes" class="sb-mensajes"></div>
+							<div class="sb-input-area">
+								<input id="sb-input" type="text" placeholder="Ej: SUV Toyota autom&#225;tica nueva, pickup 4x4 usada..." onkeydown="if(event.key==='Enter') sbEnviar()" autocomplete="off" />
+								<button type="button" onclick="sbEnviar()"><i class="fa fa-paper-plane"></i></button>
+							</div>
+						</div>
+					</div>
+				</div><!-- Search Box /- -->
+			</div><!-- Container /- -->
+		</header><!-- Header Section /- -->
+
+		<main>
+			
+			<!-- Page Banner -->
+			<div class="container-fluid no-padding page-banner">
+				<div class="padding-90"></div>
+				<!-- Container -->
+				<div class="container">
+					<h3>inventario</h3>
+					<ol class="breadcrumb">
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active">inventario</li>
+					</ol>
+				</div><!-- Container /- -->
+				<div class="padding-100"></div>
+			</div><!-- Page Banner /- -->
+		
+			<div class="section-padding"></div>
+			
+			<!-- Inventory Section -->
+				<div class="inventroy-section container-fluid no-padding">
+					<div class="container">
+
+						<!-- Barra superior: conteo + botón filtro -->
+						<div class="filtro-toggle-bar">
+							<span id="filtro-count" class="filtro-count"></span>
+							<button id="btn-filtro-toggle" class="btn-filtro-toggle" onclick="toggleFiltro()">
+								<i class="fa fa-sliders"></i> FILTROS
+							</button>
+						</div>
+
+						<!-- Panel de filtros horizontal (colapsa/expande) -->
+						<div id="filtro-panel" class="filtro-panel-horiz" style="display:none">
+							<div class="filtro-horiz-grid">
+								<div class="filtro-horiz-item">
+									<label for="f-transmision">Transmisión</label>
+									<select id="f-transmision" onchange="aplicarFiltros()">
+										<option value="">Todas</option>
+										<option value="manual">Manual</option>
+										<option value="automatico">Automático</option>
+										<option value="semi-automatico">Semi-Automático</option>
+									</select>
+								</div>
+								<div class="filtro-horiz-item">
+									<label for="f-tipo">Tipo</label>
+									<select id="f-tipo" onchange="aplicarFiltros()">
+										<option value="">Todos</option>
+										<option value="sedan">Sedán</option>
+										<option value="suv">SUV</option>
+										<option value="pickup">Pickup</option>
+										<option value="coupe">Coupé</option>
+										<option value="camioneta">Camioneta</option>
+									</select>
+								</div>
+								<div class="filtro-horiz-item">
+									<label for="f-marca">Marca</label>
+									<select id="f-marca" onchange="actualizarLineas()">
+										<option value="">Todas</option>
+									</select>
+								</div>
+								<div class="filtro-horiz-item">
+									<label for="f-linea">Línea</label>
+									<select id="f-linea" onchange="actualizarVersiones()">
+										<option value="">Todas</option>
+									</select>
+								</div>
+								<div class="filtro-horiz-item">
+									<label for="f-modelo">Año</label>
+									<select id="f-modelo" onchange="aplicarFiltros()">
+										<option value="">Todos</option>
+									</select>
+								</div>
+								<div class="filtro-horiz-item">
+									<label for="f-cilindros">Cilindros</label>
+									<select id="f-cilindros" onchange="aplicarFiltros()">
+										<option value="">Todos</option>
+										<option value="4">4 cil.</option>
+										<option value="6">6 cil.</option>
+										<option value="8">8 cil.</option>
+									</select>
+								</div>
+								<div class="filtro-horiz-item">
+									<label for="f-condicion">Condición</label>
+									<select id="f-condicion" onchange="aplicarFiltros()">
+										<option value="">Todos</option>
+										<option value="nuevo">Nuevo</option>
+										<option value="usado">Usado</option>
+									</select>
+								</div>
+								<div class="filtro-horiz-item">
+									<label for="f-orden">Ordenar por</label>
+									<select id="f-orden" onchange="aplicarFiltros()">
+										<option value="">Relevancia</option>
+										<option value="precio-asc">Precio: menor a mayor</option>
+										<option value="precio-desc">Precio: mayor a menor</option>
+										<option value="año-desc">Año: más nuevo</option>
+										<option value="año-asc">Año: más antiguo</option>
+									</select>
+								</div>
+								<div class="filtro-horiz-item filtro-horiz-item--reset">
+									<button type="button" onclick="limpiarFiltros()" class="filtro-btn-reset">
+										<i class="fa fa-refresh"></i> Limpiar
+									</button>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjetas -->
+						<div id="tarjetas-container" class="row"></div>
+						<p id="sin-resultados" style="display:none; text-align:center; color:#aaa; padding:40px 0; font-family:'Poppins'; font-size:14px;">No se encontraron vehículos con los filtros seleccionados.</p>
+						<div class="padding-40"></div>
+						<nav class="ow-pagination">
+							<ul class="pagination" id="paginacion-lista"></ul>
+						</nav>
+						<div class="padding-50"></div>
+
+					</div><!-- Container /- -->
+				</div><!-- Main Section /- -->		
+			
+			<div class="padding-100"></div>
+			
+		</main>
+	
+		
+						<!-- Footer Section -->
+		<footer class="footer-main container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+					<a href="#" title="Logo"><img src="images/ftr-logo.png" alt="Logo" /></a>
+					<p style="color:#FF8800; font-weight:600; letter-spacing:1px; margin-top:10px;">Compra. Vende. Cambia.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">NAVEGACI&#211;N</h3>
+							<ul>
+								<li><a href="about.html" title="Nosotros">Nosotros</a></li>
+								<li><a href="inventory.html" title="Inventario">Inventario</a></li>
+								<li><a href="vende.html" title="Vende tu auto">Vende tu auto</a></li>
+								<li><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+								<li><a href="blog.html" title="Blog">Blog</a></li>
+								<li><a href="contactus.html" title="Contacto">Contacto</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">VEH&#205;CULOS</h3>
+							<ul>
+								<li><a href="inventory.html" title="Autos Nuevos">Autos Nuevos</a></li>
+								<li><a href="inventory.html" title="Autos Usados">Autos Usados</a></li>
+								<li><a href="inventory.html" title="Camionetas">Camionetas</a></li>
+								<li><a href="inventory.html" title="Pickups">Pickups</a></li>
+								<li><a href="inventory.html" title="Sedanes">Sedanes</a></li>
+								<li><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">CONTACTO</h3>
+							<ul>
+								<li><a href="contactus.html" title="Cont&#225;ctanos">Cont&#225;ctanos</a></li>
+								<li><a href="#" title="Ubicaci&#243;n">Zona 10, Guatemala</a></li>
+								<li><a href="tel:50235695967" title="Tel&#233;fono">(502) 3569-5967</a></li>
+								<li><a href="mailto:info@expediamotors.com" title="Email">info@expediamotors.com</a></li>
+								<li><a href="#" title="Horario">Lun&ndash;Vie: 8:00&ndash;18:00</a></li>
+								<li><a href="#" title="Horario">S&#225;b: 8:00&ndash;13:00</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">S&#205;GUENOS</h3>
+							<ul>
+								<li><a href="#" title="Facebook"><i class="fa fa-facebook" style="margin-right:8px;color:#FF8800;"></i>Facebook</a></li>
+								<li><a href="#" title="Instagram"><i class="fa fa-instagram" style="margin-right:8px;color:#FF8800;"></i>Instagram</a></li>
+								<li><a href="#" title="Twitter"><i class="fa fa-twitter" style="margin-right:8px;color:#FF8800;"></i>Twitter</a></li>
+								<li><a href="#" title="WhatsApp"><i class="fa fa-whatsapp" style="margin-right:8px;color:#FF8800;"></i>WhatsApp</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+				</div>
+			</div><!-- Container /- -->
+
+			<!-- Copyright -->
+			<div class="container-fluid no-padding copyright">
+				<p><i class="fa fa-copyright"></i> &copy; 2025 GRUPO EXPEDIA MOTORS, S.A. &mdash; GUATEMALA</p>
+			</div><!-- Copyright /- -->
+		</footer><!-- Footer Section /- -->
+		
+	</div>
+	
+	<!-- JQuery v1.12.4 -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+
+	<!-- Library - Js -->
+	<script src="libraries/lib.js"></script>
+	
+	<!-- Library - Theme JS -->
+	<script src="js/functions.js"></script>
+
+	<!-- Datos del inventario -->
+	<script src="data/inventario.js"></script>
+
+	<script>
+				var VEHICULOS_POR_PAGINA = 6;
+		var vehiculosFiltrados   = [];
+		var pagActual            = 1;
+		var filtroVisible        = false;
+
+		function norm(s) {
+			return String(s).toLowerCase()
+				.replace(/á/g,'a').replace(/é/g,'e').replace(/í/g,'i')
+				.replace(/ó/g,'o').replace(/ú/g,'u').replace(/ñ/g,'n');
+		}
+
+		function unique(arr) {
+			return arr.filter(function(v, i, a) { return a.indexOf(v) === i; }).sort();
+		}
+
+		function fmt(n) {
+			return 'Q ' + Number(n).toLocaleString('es-GT');
+		}
+
+		function poblarDropdowns() {
+			var marcas = unique(INVENTARIO.map(function(v) { return v.marca; }));
+			var selMarca = document.getElementById('f-marca');
+			selMarca.innerHTML = '<option value="">Todas</option>';
+			marcas.forEach(function(m) {
+				selMarca.innerHTML += '<option value="' + norm(m) + '">' + m + '</option>';
+			});
+
+			var años = unique(INVENTARIO.map(function(v) { return String(v.año); })).reverse();
+			var selModelo = document.getElementById('f-modelo');
+			selModelo.innerHTML = '<option value="">Todos</option>';
+			años.forEach(function(a) {
+				selModelo.innerHTML += '<option value="' + a + '">' + a + '</option>';
+			});
+
+			actualizarLineas();
+		}
+
+		function actualizarLineas() {
+			var marcaVal = norm(document.getElementById('f-marca').value);
+			var lista = INVENTARIO.filter(function(v) {
+				return !marcaVal || norm(v.marca) === marcaVal;
+			});
+			var lineas = unique(lista.map(function(v) { return v.linea; }));
+			var sel = document.getElementById('f-linea');
+			sel.innerHTML = '<option value="">Todas</option>';
+			lineas.forEach(function(l) {
+				sel.innerHTML += '<option value="' + norm(l) + '">' + l + '</option>';
+			});
+			aplicarFiltros();
+		}
+
+		function actualizarVersiones() {
+			aplicarFiltros();
+		}
+
+		function renderizarTarjetas(lista, pagina) {
+			var inicio = (pagina - 1) * VEHICULOS_POR_PAGINA;
+			var items  = lista.slice(inicio, inicio + VEHICULOS_POR_PAGINA);
+			var html   = '';
+
+			var countEl = document.getElementById('filtro-count');
+			if (countEl) {
+				countEl.textContent = lista.length + ' vehículo' + (lista.length !== 1 ? 's' : '') + ' encontrado' + (lista.length !== 1 ? 's' : '');
+			}
+
+			if (items.length === 0) {
+				document.getElementById('sin-resultados').style.display = 'block';
+			} else {
+				document.getElementById('sin-resultados').style.display = 'none';
+				items.forEach(function(v) {
+					var badge = norm(v.condicion) === 'nuevo' ? 'card-badge--nuevo' : 'card-badge--usado';
+					var kmTxt = v.km === 0 ? '0 km' : Number(v.km).toLocaleString('es-GT') + ' km';
+					html += '<div class="col-md-4 col-sm-6 col-xs-12 inventroy-box">';
+					html += '<div class="card-inner">';
+					html += '<span class="card-badge ' + badge + '">' + v.condicion + '</span>';
+					html += '<img src="' + v.imagen + '" alt="' + v.marca + ' ' + v.linea + '" />';
+					html += '<div class="inventroy-content">';
+					html += '<h3>' + v.marca + ' ' + v.linea + ' ' + v.año + '</h3>';
+					html += '<div class="inv-boxs">';
+					html += '<span><i class="fa fa-calendar-o"></i> ' + v.año + '</span>';
+					html += '<span><i class="fa fa-tachometer"></i> ' + v.potencia + '</span>';
+					html += '<span><i class="fa fa-cogs"></i> ' + v.transmision + '</span>';
+					html += '<span><i class="fa fa-road"></i> ' + kmTxt + '</span>';
+					html += '</div>';
+					html += '<h4>DESDE <b>' + fmt(v.precio) + '</b></h4>';
+					html += '<a href="inventory-single.html?id=' + v.id + '" title="Ver vehículo">ver vehículo</a>';
+					html += '</div></div></div>';
+				});
+			}
+
+			document.getElementById('tarjetas-container').innerHTML = html;
+
+			var totalPaginas = Math.ceil(lista.length / VEHICULOS_POR_PAGINA);
+			var pagHtml = '';
+			if (totalPaginas > 1) {
+				for (var i = 1; i <= totalPaginas; i++) {
+					pagHtml += '<li class="' + (i === pagina ? 'active' : '') + '"><a href="#" onclick="irPagina(' + i + '); return false;">' + i + '</a></li>';
+				}
+			}
+			document.getElementById('paginacion-lista').innerHTML = pagHtml;
+		}
+
+		function aplicarFiltros() {
+			var transmision = norm(document.getElementById('f-transmision').value);
+			var tipo        = norm(document.getElementById('f-tipo').value);
+			var marca       = norm(document.getElementById('f-marca').value);
+			var linea       = norm(document.getElementById('f-linea').value);
+			var modelo      = document.getElementById('f-modelo').value;
+			var cilindros   = document.getElementById('f-cilindros').value;
+			var condicion   = norm(document.getElementById('f-condicion').value);
+			var orden       = document.getElementById('f-orden').value;
+
+			vehiculosFiltrados = INVENTARIO.filter(function(v) {
+				return (!transmision || norm(v.transmision) === transmision) &&
+				       (!tipo        || norm(v.tipo) === tipo)               &&
+				       (!marca       || norm(v.marca) === marca)             &&
+				       (!linea       || norm(v.linea) === linea)             &&
+				       (!modelo      || String(v.año) === modelo)            &&
+				       (!cilindros   || String(v.cilindros) === cilindros)   &&
+				       (!condicion   || norm(v.condicion) === condicion);
+			});
+
+			if (orden === 'precio-asc')  vehiculosFiltrados.sort(function(a,b){ return a.precio - b.precio; });
+			if (orden === 'precio-desc') vehiculosFiltrados.sort(function(a,b){ return b.precio - a.precio; });
+			if (orden === 'año-desc')    vehiculosFiltrados.sort(function(a,b){ return b.año - a.año; });
+			if (orden === 'año-asc')     vehiculosFiltrados.sort(function(a,b){ return a.año - b.año; });
+
+			pagActual = 1;
+			renderizarTarjetas(vehiculosFiltrados, pagActual);
+		}
+
+		function limpiarFiltros() {
+			['f-transmision','f-tipo','f-marca','f-linea','f-modelo','f-cilindros','f-condicion','f-orden'].forEach(function(id) {
+				document.getElementById(id).selectedIndex = 0;
+			});
+			poblarDropdowns();
+		}
+
+		function irPagina(n) {
+			pagActual = n;
+			renderizarTarjetas(vehiculosFiltrados, pagActual);
+			window.scrollTo(0, document.getElementById('tarjetas-container').offsetTop - 100);
+		}
+
+		function toggleFiltro() {
+			filtroVisible = !filtroVisible;
+			var panel = document.getElementById('filtro-panel');
+			var btn   = document.getElementById('btn-filtro-toggle');
+			panel.style.display = filtroVisible ? 'block' : 'none';
+			btn.innerHTML = filtroVisible
+				? '<i class="fa fa-times"></i> OCULTAR'
+				: '<i class="fa fa-sliders"></i> FILTROS';
+		}
+
+		$(document).ready(function() {
+			poblarDropdowns();
+			aplicarFiltros();
+		});
+	</script>
+
+<a id="wa-btn" href="https://wa.me/50235695967" target="_blank" title="Escríbenos por WhatsApp"><i class="fa fa-whatsapp"></i></a>
+<script src="js/buscador-navbar.js"></script></body>
+</html>

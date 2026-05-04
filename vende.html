@@ -1,0 +1,443 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Expedia Motors - Vende tu Vehículo</title>
+	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libraries/lib.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<div class="main-container">
+		<!-- Loader -->
+		<div id="site-loader" class="load-complete">
+			<div class="loader">
+				<div class="loader-inner ball-clip-rotate">
+					<div></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Section -->
+		<header id="header" class="header-section container-fluid no-padding">
+			<div class="container">
+				<div class="top-header container-fluid no-padding">
+					<div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+						<a href="#"><img src="images/chat-ic.png" alt="Chat" /><span>Haz clic para</span><b>Chatear</b></a>
+						<a href="#"><img src="images/phone-ic.png" alt="Phone" /><span>Llámanos al</span><b>(502) 3569-5967</b></a>
+						<ul>
+							<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<nav class="navbar navbar-default ow-navigation">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Alternar navegación</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+					</div>
+					<div class="menu-icon">
+						<div class="search">
+							<a href="#" id="search" title="Buscar"><img src="images/search-ic.png" alt="Buscar" /></a>
+						</div>
+					</div>
+					<div class="navbar-collapse collapse navbar-right" id="navbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html" title="Inicio">Inicio</a></li>
+							<li><a href="about.html" title="Nosotros">Nosotros</a></li>
+							<li><a href="inventory.html" title="Inventario">Inventario</a></li>
+							<li class="active"><a href="vende.html" title="Vende tu auto">Vende tu auto</a></li>
+							<li><a href="parte-de-pago.html" title="Parte de pago">Parte de pago</a></li>
+							<li class="nav-cta"><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+							<li><a href="contactus.html" title="Contacto">Contacto</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="search-box">
+					<span><i class="icon_close"></i></span>
+					<div class="sb-ai-panel">
+						<div class="sb-ai-inner">
+							<div class="sb-ai-header">
+								<div class="sb-ai-header-info">
+									<div class="sb-ai-avatar-hdr"><i class="fa fa-car"></i></div>
+									<div>
+										<div class="sb-ai-header-titulo">Expedia Motors</div>
+										<div class="sb-ai-header-sub"><span class="sb-ai-dot"></span> Asistente en l&#237;nea</div>
+									</div>
+								</div>
+							</div>
+							<div id="sb-mensajes" class="sb-mensajes"></div>
+							<div class="sb-input-area">
+								<input id="sb-input" type="text" placeholder="Ej: SUV Toyota autom&#225;tica nueva, pickup 4x4 usada..." onkeydown="if(event.key==='Enter') sbEnviar()" autocomplete="off" />
+								<button type="button" onclick="sbEnviar()"><i class="fa fa-paper-plane"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+
+			<!-- Page Banner -->
+			<div class="container-fluid no-padding page-banner">
+				<div class="padding-90"></div>
+				<div class="container">
+					<h3>Vende tu Vehículo</h3>
+					<ol class="breadcrumb">
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active">vende tu vehículo</li>
+					</ol>
+				</div>
+				<div class="padding-100"></div>
+			</div>
+
+			<!-- Tira de beneficios -->
+			<div class="vende-strip">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-sm-4 col-xs-12 vende-beneficio">
+							<i class="fa fa-money"></i>
+							<div>
+								<h4>Mejor precio del mercado</h4>
+								<p>Evaluamos tu vehículo con total transparencia y te ofrecemos el precio más justo del mercado.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 vende-beneficio">
+							<i class="fa fa-bolt"></i>
+							<div>
+								<h4>Proceso en 24 horas</h4>
+								<p>Recibe nuestra oferta en menos de 24 horas. Sin trámites complicados ni esperas innecesarias.</p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4 col-xs-12 vende-beneficio" style="border-right:none;">
+							<i class="fa fa-shield"></i>
+							<div>
+								<h4>Pago seguro e inmediato</h4>
+								<p>Garantizamos un proceso seguro y transparente. El pago es inmediato al cerrar el trato.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Sección del formulario -->
+			<div class="vende-form-section">
+				<div class="container">
+					<div class="row">
+
+						<!-- Formulario -->
+						<div class="col-md-7 col-sm-12 col-xs-12">
+							<div id="vende-form-area">
+								<div class="vende-form-box">
+									<h3>Datos de tu vehículo</h3>
+									<div class="form-divider"></div>
+									<form onsubmit="vendeTuAuto(); return false;">
+										<div class="row">
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Marca <span style="color:#FF8800;">*</span></label>
+													<input id="v-marca" type="text" placeholder="Ej. Toyota, Honda, Ford..." />
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Línea / Modelo <span style="color:#FF8800;">*</span></label>
+													<input id="v-linea" type="text" placeholder="Ej. Fortuner, CR-V, Frontier..." />
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Año <span style="color:#FF8800;">*</span></label>
+													<input id="v-año" type="number" placeholder="Ej. 2019" min="1990" max="2026" />
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Kilometraje</label>
+													<input id="v-km" type="text" placeholder="Ej. 45,000 km" />
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Transmisión</label>
+													<select id="v-transmision">
+														<option value="">Seleccionar...</option>
+														<option>Automático</option>
+														<option>Manual</option>
+														<option>Semi-automático</option>
+													</select>
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Condición general</label>
+													<select id="v-condicion">
+														<option value="">Seleccionar...</option>
+														<option>Excelente</option>
+														<option>Buena</option>
+														<option>Regular</option>
+														<option>Necesita reparación</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Color</label>
+													<input id="v-color" type="text" placeholder="Ej. Blanco, Negro, Plateado..." />
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Tipo de vehículo</label>
+													<select id="v-tipo">
+														<option value="">Seleccionar...</option>
+														<option>SUV</option>
+														<option>Sedán</option>
+														<option>Pickup</option>
+														<option>Camioneta</option>
+														<option>Coupé</option>
+														<option>Otro</option>
+													</select>
+												</div>
+											</div>
+										</div>
+										<div class="vende-form-group">
+											<label>Descripción adicional</label>
+											<textarea id="v-descripcion" placeholder="Cuéntanos más sobre tu vehículo: accesorios, historial de mantenimiento, detalles importantes, daños visibles..."></textarea>
+										</div>
+
+										<h3 style="margin-top:36px;">Tus datos de contacto</h3>
+										<div class="form-divider"></div>
+										<div class="row">
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Nombre completo <span style="color:#FF8800;">*</span></label>
+													<input id="v-nombre" type="text" placeholder="Tu nombre completo" />
+												</div>
+											</div>
+											<div class="col-md-6 col-xs-12">
+												<div class="vende-form-group">
+													<label>Teléfono / WhatsApp <span style="color:#FF8800;">*</span></label>
+													<input id="v-telefono" type="tel" placeholder="(502) 0000-0000" />
+												</div>
+											</div>
+										</div>
+										<div class="vende-form-group">
+											<label>Correo electrónico</label>
+											<input id="v-email" type="email" placeholder="tucorreo@ejemplo.com" />
+										</div>
+										<p style="font-size:11px; color:rgba(255,255,255,0.35); margin-bottom:18px;"><span style="color:#FF8800;">*</span> Campos obligatorios</p>
+										<button type="submit" class="vende-submit">Enviar solicitud &nbsp;<i class="fa fa-whatsapp"></i></button>
+									</form>
+								</div>
+							</div>
+
+							<!-- Mensaje de éxito -->
+							<div id="vende-exito" style="display:none;" class="vende-form-box" style="text-align:center; padding:60px 40px;">
+								<i class="fa fa-check-circle" style="font-size:52px; color:#FF8800; display:block; margin-bottom:20px;"></i>
+								<h3 style="margin-bottom:12px;">¡Solicitud enviada!</h3>
+								<p style="color:rgba(255,255,255,0.6); margin-bottom:28px;">Hemos recibido los datos de tu vehículo vía WhatsApp. Un asesor se pondrá en contacto contigo muy pronto.</p>
+								<a href="index.html" class="vende-submit" style="display:inline-block; text-decoration:none;">Volver al inicio &nbsp;<i class="fa fa-home"></i></a>
+							</div>
+						</div>
+
+						<!-- Info lateral -->
+						<div class="col-md-5 col-sm-12 col-xs-12">
+							<div class="vende-info-box">
+								<h4>¿Cómo funciona?</h4>
+								<div class="vende-info-divider"></div>
+								<div class="vende-info-paso">
+									<div class="vende-info-paso-num">01</div>
+									<div>
+										<h5>Llena el formulario</h5>
+										<p>Completa los datos de tu vehículo y tu información de contacto. Solo toma unos minutos.</p>
+									</div>
+								</div>
+								<div class="vende-info-paso">
+									<div class="vende-info-paso-num">02</div>
+									<div>
+										<h5>Evaluación gratuita</h5>
+										<p>Nuestro equipo especializado revisa tu solicitud y coordina una inspección sin costo.</p>
+									</div>
+								</div>
+								<div class="vende-info-paso">
+									<div class="vende-info-paso-num">03</div>
+									<div>
+										<h5>Recibe tu oferta</h5>
+										<p>Te presentamos una oferta competitiva. Si aceptas, el pago es inmediato y sin complicaciones.</p>
+									</div>
+								</div>
+								<div class="vende-info-contacto">
+									<p>¿Tienes preguntas? Escríbenos directamente:</p>
+									<p><i class="fa fa-whatsapp" style="color:#FF8800; margin-right:8px;"></i><a href="tel:50235695967">(502) 3569-5967</a></p>
+									<p><i class="fa fa-envelope-o" style="color:#FF8800; margin-right:8px;"></i><a href="mailto:info@expediamotors.com">info@expediamotors.com</a></p>
+									<p><i class="fa fa-clock-o" style="color:#FF8800; margin-right:8px;"></i>Lun&ndash;Vie: 8:00&ndash;18:00 &nbsp;|&nbsp; S&#225;b: 8:00&ndash;13:00</p>
+									<p style="margin-top:20px;"><a href="parte-de-pago.html" style="color:rgba(255,255,255,0.5); font-size:12px; display:block; padding:14px 0; border-top:1px solid rgba(255,255,255,0.07);">&#8594;&nbsp; ¿Prefieres dar tu auto como parte de pago? <span style="color:#FF8800;">Ver opciones</span></a></p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="padding-100"></div>
+
+		</main>
+
+		<!-- Footer Section -->
+		<footer class="footer-main container-fluid no-padding">
+			<div class="container">
+				<div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+					<a href="#" title="Logo"><img src="images/ftr-logo.png" alt="Logo" /></a>
+					<p style="color:#FF8800; font-weight:600; letter-spacing:1px; margin-top:10px;">Compra. Vende. Cambia.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_link">
+							<h3 class="widget-title">NAVEGACI&#211;N</h3>
+							<ul>
+								<li><a href="about.html" title="Nosotros">Nosotros</a></li>
+								<li><a href="inventory.html" title="Inventario">Inventario</a></li>
+								<li><a href="vende.html" title="Vende tu auto">Vende tu auto</a></li>
+								<li><a href="parte-de-pago.html" title="Parte de pago">Parte de pago</a></li>
+								<li><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+								<li><a href="contactus.html" title="Contacto">Contacto</a></li>
+							</ul>
+						</aside>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_link">
+							<h3 class="widget-title">VEH&#205;CULOS</h3>
+							<ul>
+								<li><a href="inventory.html" title="Autos Nuevos">Autos Nuevos</a></li>
+								<li><a href="inventory.html" title="Autos Usados">Autos Usados</a></li>
+								<li><a href="inventory.html" title="Camionetas">Camionetas</a></li>
+								<li><a href="inventory.html" title="Pickups">Pickups</a></li>
+								<li><a href="inventory.html" title="Sedanes">Sedanes</a></li>
+								<li><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+							</ul>
+						</aside>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_link">
+							<h3 class="widget-title">CONTACTO</h3>
+							<ul>
+								<li><a href="contactus.html" title="Cont&#225;ctanos">Cont&#225;ctanos</a></li>
+								<li><a href="#" title="Ubicaci&#243;n">Zona 10, Guatemala</a></li>
+								<li><a href="tel:50235695967" title="Tel&#233;fono">(502) 3569-5967</a></li>
+								<li><a href="mailto:info@expediamotors.com" title="Email">info@expediamotors.com</a></li>
+								<li><a href="#" title="Horario">Lun&ndash;Vie: 8:00&ndash;18:00</a></li>
+								<li><a href="#" title="Horario">S&#225;b: 8:00&ndash;13:00</a></li>
+							</ul>
+						</aside>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_link">
+							<h3 class="widget-title">S&#205;GUENOS</h3>
+							<ul>
+								<li><a href="#" title="Facebook"><i class="fa fa-facebook" style="margin-right:8px;color:#FF8800;"></i>Facebook</a></li>
+								<li><a href="#" title="Instagram"><i class="fa fa-instagram" style="margin-right:8px;color:#FF8800;"></i>Instagram</a></li>
+								<li><a href="#" title="Twitter"><i class="fa fa-twitter" style="margin-right:8px;color:#FF8800;"></i>Twitter</a></li>
+								<li><a href="#" title="WhatsApp"><i class="fa fa-whatsapp" style="margin-right:8px;color:#FF8800;"></i>WhatsApp</a></li>
+							</ul>
+						</aside>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid no-padding copyright">
+				<p><i class="fa fa-copyright"></i> &copy; 2025 GRUPO EXPEDIA MOTORS, S.A. &mdash; GUATEMALA</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="libraries/lib.js"></script>
+	<script src="js/functions.js"></script>
+
+<script>
+function vendeTuAuto() {
+    var marca       = (document.getElementById('v-marca').value || '').trim();
+    var linea       = (document.getElementById('v-linea').value || '').trim();
+    var año         = (document.getElementById('v-año').value || '').trim();
+    var km          = (document.getElementById('v-km').value || '').trim();
+    var transmision = document.getElementById('v-transmision').value;
+    var condicion   = document.getElementById('v-condicion').value;
+    var color       = (document.getElementById('v-color').value || '').trim();
+    var tipo        = document.getElementById('v-tipo').value;
+    var descripcion = (document.getElementById('v-descripcion').value || '').trim();
+    var nombre      = (document.getElementById('v-nombre').value || '').trim();
+    var telefono    = (document.getElementById('v-telefono').value || '').trim();
+    var email       = (document.getElementById('v-email').value || '').trim();
+
+    var errores = [];
+    if (!marca)    errores.push('Marca');
+    if (!linea)    errores.push('Línea / Modelo');
+    if (!año)      errores.push('Año');
+    if (!nombre)   errores.push('Nombre completo');
+    if (!telefono) errores.push('Teléfono / WhatsApp');
+
+    if (errores.length > 0) {
+        alert('Por favor completa los siguientes campos obligatorios:\n• ' + errores.join('\n• '));
+        return;
+    }
+
+    var msg = '🚗 *Solicitud de venta de vehículo — Expedia Motors*\n\n';
+    msg += '*Datos del vehículo:*\n';
+    msg += '• Marca: ' + marca + '\n';
+    msg += '• Línea: ' + linea + '\n';
+    msg += '• Año: ' + año + '\n';
+    if (km)          msg += '• Kilometraje: ' + km + '\n';
+    if (transmision) msg += '• Transmisión: ' + transmision + '\n';
+    if (condicion)   msg += '• Condición: ' + condicion + '\n';
+    if (color)       msg += '• Color: ' + color + '\n';
+    if (tipo)        msg += '• Tipo: ' + tipo + '\n';
+    if (descripcion) msg += '• Descripción: ' + descripcion + '\n';
+    msg += '\n*Datos de contacto:*\n';
+    msg += '• Nombre: ' + nombre + '\n';
+    msg += '• Teléfono: ' + telefono + '\n';
+    if (email) msg += '• Email: ' + email + '\n';
+
+    window.open('https://wa.me/50235695967?text=' + encodeURIComponent(msg), '_blank');
+
+    document.getElementById('vende-form-area').style.display = 'none';
+    document.getElementById('vende-exito').style.display = 'block';
+    window.scrollTo(0, document.getElementById('vende-exito').offsetTop - 100);
+}
+</script>
+<a id="wa-btn" href="https://wa.me/50235695967" target="_blank" title="Escríbenos por WhatsApp"><i class="fa fa-whatsapp"></i></a>
+<script src="js/buscador-navbar.js"></script></body>
+</html>

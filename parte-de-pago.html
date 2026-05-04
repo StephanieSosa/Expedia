@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<title>Expedia Motors - Parte de Pago</title>
+	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libraries/lib.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<div class="main-container">
+		<!-- Loader -->
+		<div id="site-loader" class="load-complete">
+			<div class="loader">
+				<div class="loader-inner ball-clip-rotate">
+					<div></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Header Section -->
+		<header id="header" class="header-section container-fluid no-padding">
+			<div class="container">
+				<div class="top-header container-fluid no-padding">
+					<div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+						<a href="#"><img src="images/chat-ic.png" alt="Chat" /><span>Haz clic para</span><b>Chatear</b></a>
+						<a href="#"><img src="images/phone-ic.png" alt="Phone" /><span>Llámanos al</span><b>(502) 3569-5967</b></a>
+						<ul>
+							<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<nav class="navbar navbar-default ow-navigation">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Alternar navegación</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+					</div>
+					<div class="menu-icon">
+						<div class="search">
+							<a href="#" id="search" title="Buscar"><img src="images/search-ic.png" alt="Buscar" /></a>
+						</div>
+					</div>
+					<div class="navbar-collapse collapse navbar-right" id="navbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html" title="Inicio">Inicio</a></li>
+							<li><a href="about.html" title="Nosotros">Nosotros</a></li>
+							<li><a href="inventory.html" title="Inventario">Inventario</a></li>
+							<li><a href="vende.html" title="Vende tu auto">Vende tu auto</a></li>
+							<li class="active"><a href="parte-de-pago.html" title="Parte de pago">Parte de pago</a></li>
+							<li class="nav-cta"><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+							<li><a href="contactus.html" title="Contacto">Contacto</a></li>
+						</ul>
+					</div>
+				</nav>
+				<div class="search-box">
+					<span><i class="icon_close"></i></span>
+					<div class="sb-ai-panel">
+						<div class="sb-ai-inner">
+							<div class="sb-ai-header">
+								<div class="sb-ai-header-info">
+									<div class="sb-ai-avatar-hdr"><i class="fa fa-car"></i></div>
+									<div>
+										<div class="sb-ai-header-titulo">Expedia Motors</div>
+										<div class="sb-ai-header-sub"><span class="sb-ai-dot"></span> Asistente en l&#237;nea</div>
+									</div>
+								</div>
+							</div>
+							<div id="sb-mensajes" class="sb-mensajes"></div>
+							<div class="sb-input-area">
+								<input id="sb-input" type="text" placeholder="Ej: SUV Toyota autom&#225;tica nueva, pickup 4x4 usada..." onkeydown="if(event.key==='Enter') sbEnviar()" autocomplete="off" />
+								<button type="button" onclick="sbEnviar()"><i class="fa fa-paper-plane"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+
+			<!-- Page Banner -->
+			<div class="container-fluid no-padding page-banner">
+				<div class="padding-90"></div>
+				<div class="container">
+					<h3>Parte de Pago</h3>
+					<ol class="breadcrumb">
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active">Parte de pago</li>
+					</ol>
+				</div>
+				<div class="padding-100"></div>
+			</div>
+
+			<!-- Concepto de intercambio -->
+			<div class="pp-concepto">
+				<div class="container">
+					<div class="pp-concepto-pasos">
+						<div class="pp-concepto-paso">
+							<div class="pp-concepto-icono"><i class="fa fa-car"></i></div>
+							<div class="pp-concepto-titulo">Tu vehículo actual</div>
+							<div class="pp-concepto-sub">Lo traes a avalúo</div>
+						</div>
+						<div class="pp-concepto-flecha">&#8594;</div>
+						<div class="pp-concepto-paso">
+							<div class="pp-concepto-icono"><i class="fa fa-search"></i></div>
+							<div class="pp-concepto-titulo">Avalúo justo</div>
+							<div class="pp-concepto-sub">Lo valoramos al precio del mercado</div>
+						</div>
+						<div class="pp-concepto-flecha">&#8594;</div>
+						<div class="pp-concepto-paso">
+							<div class="pp-concepto-icono"><i class="fa fa-calculator"></i></div>
+							<div class="pp-concepto-titulo">Pagas la diferencia</div>
+							<div class="pp-concepto-sub">De contado o financiada</div>
+						</div>
+						<div class="pp-concepto-flecha">&#8594;</div>
+						<div class="pp-concepto-paso">
+							<div class="pp-concepto-icono"><i class="fa fa-key"></i></div>
+							<div class="pp-concepto-titulo">¡Te llevas tu nuevo auto!</div>
+							<div class="pp-concepto-sub">Así de sencillo</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Formulario + Calculadora -->
+			<div class="pp-seccion">
+				<div class="container">
+					<div class="row">
+
+						<!-- Formulario -->
+						<div class="col-md-7 col-sm-12 col-xs-12">
+							<div id="pp-form-area">
+								<div class="pp-form-box">
+
+									<!-- Sección 1: Tu vehículo actual -->
+									<div class="pp-form-seccion-titulo">
+										<div class="pp-form-seccion-num">1</div>
+										<h3>Tu vehículo actual</h3>
+									</div>
+									<hr class="pp-divider" />
+									<div class="row">
+										<div class="col-md-6 col-xs-12">
+											<div class="pp-form-grupo">
+												<label>Marca *</label>
+												<input id="pp-marca" type="text" placeholder="Ej. Toyota, Nissan, Ford..." />
+											</div>
+										</div>
+										<div class="col-md-6 col-xs-12">
+											<div class="pp-form-grupo">
+												<label>Línea / Modelo *</label>
+												<input id="pp-linea" type="text" placeholder="Ej. Fortuner, Frontier..." />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-xs-12">
+											<div class="pp-form-grupo">
+												<label>Año *</label>
+												<input id="pp-anio" type="number" placeholder="Ej. 2018" min="1990" max="2025" />
+											</div>
+										</div>
+										<div class="col-md-6 col-xs-12">
+											<div class="pp-form-grupo">
+												<label>Kilometraje</label>
+												<input id="pp-km" type="text" placeholder="Ej. 60,000 km" />
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6 col-xs-12">
+											<div class="pp-form-grupo">
+												<label>Transmisión</label>
+												<select id="pp-transmision">
+													<option value="">Seleccionar...</option>
+													<option>Automático</option>
+													<option>Manual</option>
+													<option>Semi-automático</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6 col-xs-12">
+											<div class="pp-form-grupo">
+												<label>Condición general</label>
+												<select id="pp-condicion">
+													<option value="">Seleccionar...</option>
+													<option>Excelente</option>
+													<option>Buena</option>
+													<option>Regular</option>
+													<option>Necesita reparación</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="pp-form-grupo">
+										<label>Descripción adicional</label>
+										<textarea id="pp-descripcion" placeholder="Accesorios, detalles de mantenimiento, daños visibles..."></textarea>
+									</div>
+
+									<!-- Sección 2: Vehículo que deseas -->
+									<div class="pp-form-seccion-titulo" style="margin-top:32px;">
+										<div class="pp-form-seccion-num">2</div>
+										<h3>Vehículo que deseas adquirir</h3>
+									</div>
+									<hr class="pp-divider" />
+									<div class="pp-form-grupo">
+										<label>Selecciona del inventario</label>
+										<select id="pp-vehiculo-deseado" onchange="ppCalcular()">
+											<option value="">Seleccionar vehículo...</option>
+										</select>
+									</div>
+									<div class="pp-form-grupo">
+										<label>O describe el vehículo que buscas</label>
+										<input id="pp-describe-deseado" type="text" placeholder="Ej. Toyota Hilux 2024, doble tracción automática..." />
+									</div>
+
+									<!-- Sección 3: Tus datos -->
+									<div class="pp-form-seccion-titulo" style="margin-top:32px;">
+										<div class="pp-form-seccion-num">3</div>
+										<h3>Tus datos de contacto</h3>
+									</div>
+									<hr class="pp-divider" />
+									<div class="row">
+										<div class="col-md-6 col-xs-12">
+											<div class="pp-form-grupo">
+												<label>Nombre completo *</label>
+												<input id="pp-nombre" type="text" placeholder="Tu nombre completo" />
+											</div>
+										</div>
+										<div class="col-md-6 col-xs-12">
+											<div class="pp-form-grupo">
+												<label>Teléfono / WhatsApp *</label>
+												<input id="pp-telefono" type="tel" placeholder="(502) 0000-0000" />
+											</div>
+										</div>
+									</div>
+									<div class="pp-form-grupo">
+										<label>Correo electrónico</label>
+										<input id="pp-email" type="email" placeholder="tucorreo@ejemplo.com" />
+									</div>
+
+									<button type="button" class="pp-submit" onclick="ppEnviar()">
+										<i class="fa fa-whatsapp"></i> Solicitar avalúo por WhatsApp
+									</button>
+								</div>
+							</div>
+
+							<!-- Mensaje de éxito -->
+							<div id="pp-exito" class="pp-exito">
+								<div class="pp-exito-icono"><i class="fa fa-check-circle"></i></div>
+								<h3>¡Solicitud enviada!</h3>
+								<p>Tu solicitud de parte de pago fue enviada por WhatsApp.<br>Un asesor te contactará para coordinar el avalúo de tu vehículo.</p>
+								<a href="inventory.html" style="display:inline-block;margin-top:24px;background:#FF8800;color:#fff;padding:12px 28px;border-radius:8px;font-family:'Poppins',sans-serif;font-weight:700;font-size:13px;text-decoration:none;">Ver inventario disponible &nbsp;&#8594;</a>
+							</div>
+						</div>
+
+						<!-- Panel lateral -->
+						<div class="col-md-5 col-sm-12 col-xs-12">
+
+							<!-- Calculadora de diferencia -->
+							<div class="pp-calc-box">
+								<div class="pp-calc-titulo">Calculadora de diferencia</div>
+								<div class="pp-calc-sub">Estima cuánto pagarías por tu nuevo vehículo descontando el valor del tuyo.</div>
+								<hr class="pp-calc-divider" />
+
+								<div class="pp-calc-label">
+									<span>Valor de tu vehículo</span>
+									<span id="pp-val-entrega">Q 80,000</span>
+								</div>
+								<input type="range" id="pp-slider-entrega" class="pago-slider" min="10000" max="500000" step="5000" value="80000"
+									oninput="ppCalcular()"
+									style="background: linear-gradient(to right,#FF8800 0%,#FF8800 14%,rgba(255,255,255,0.1) 14%,rgba(255,255,255,0.1) 100%)" />
+								<div class="pp-calc-extremos">
+									<span>Q 10,000</span>
+									<span>Q 500,000</span>
+								</div>
+
+								<div class="pp-calc-select">
+									<label>Vehículo que deseas</label>
+									<select id="pp-calc-vehiculo" onchange="ppCalcular()">
+										<option value="">Seleccionar vehículo...</option>
+									</select>
+								</div>
+
+								<div class="pago-diff-box" style="border-radius:10px; margin-top:18px;">
+									<div class="pago-diff-label">Diferencia estimada a pagar</div>
+									<div class="pago-diff-monto" id="pp-diferencia">Q 0</div>
+									<div class="pago-diff-nota" id="pp-diff-nota">Selecciona un vehículo para calcular.</div>
+								</div>
+							</div>
+
+							<!-- Pasos del proceso -->
+							<div class="pp-pasos-box">
+								<div class="pp-paso">
+									<div class="pp-paso-num">01</div>
+									<div>
+										<h5>Envía tu solicitud</h5>
+										<p>Llena el formulario con los datos de tu vehículo y del que deseas. El proceso es 100% en línea.</p>
+									</div>
+								</div>
+								<div class="pp-paso">
+									<div class="pp-paso-num">02</div>
+									<div>
+										<h5>Avalúo presencial</h5>
+										<p>Un asesor revisará tu vehículo y determinará el valor de crédito que se aplicará.</p>
+									</div>
+								</div>
+								<div class="pp-paso">
+									<div class="pp-paso-num">03</div>
+									<div>
+										<h5>Paga solo la diferencia</h5>
+										<p>De contado o financiada. Puedes combinarlo con nuestros planes de financiamiento.</p>
+									</div>
+								</div>
+								<div class="pp-paso">
+									<div class="pp-paso-num">04</div>
+									<div>
+										<h5>¡A disfrutar!</h5>
+										<p>Recibe las llaves de tu nuevo vehículo el mismo día del cierre del trato.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="pp-contacto-link">
+								<a href="tel:50235695967"><i class="fa fa-phone"></i>(502) 3569-5967</a>
+								<a href="mailto:info@expediamotors.com"><i class="fa fa-envelope-o"></i>info@expediamotors.com</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="padding-60"></div>
+
+		</main>
+
+		<!-- Footer Section -->
+		<footer class="footer-main container-fluid no-padding">
+			<div class="container">
+				<div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+					<a href="#" title="Logo"><img src="images/ftr-logo.png" alt="Logo" /></a>
+					<p style="color:#FF8800; font-weight:600; letter-spacing:1px; margin-top:10px;">Compra. Vende. Cambia.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_link">
+							<h3 class="widget-title">NAVEGACI&#211;N</h3>
+							<ul>
+								<li><a href="about.html" title="Nosotros">Nosotros</a></li>
+								<li><a href="inventory.html" title="Inventario">Inventario</a></li>
+								<li><a href="vende.html" title="Vende tu auto">Vende tu auto</a></li>
+								<li><a href="parte-de-pago.html" title="Parte de pago">Parte de pago</a></li>
+								<li><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+								<li><a href="contactus.html" title="Contacto">Contacto</a></li>
+							</ul>
+						</aside>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_link">
+							<h3 class="widget-title">VEH&#205;CULOS</h3>
+							<ul>
+								<li><a href="inventory.html" title="Autos Nuevos">Autos Nuevos</a></li>
+								<li><a href="inventory.html" title="Autos Usados">Autos Usados</a></li>
+								<li><a href="inventory.html" title="Camionetas">Camionetas</a></li>
+								<li><a href="inventory.html" title="Pickups">Pickups</a></li>
+								<li><a href="inventory.html" title="Sedanes">Sedanes</a></li>
+								<li><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+							</ul>
+						</aside>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_link">
+							<h3 class="widget-title">CONTACTO</h3>
+							<ul>
+								<li><a href="contactus.html" title="Cont&#225;ctanos">Cont&#225;ctanos</a></li>
+								<li><a href="#" title="Ubicaci&#243;n">Zona 10, Guatemala</a></li>
+								<li><a href="tel:50235695967" title="Tel&#233;fono">(502) 3569-5967</a></li>
+								<li><a href="mailto:info@expediamotors.com" title="Email">info@expediamotors.com</a></li>
+								<li><a href="#" title="Horario">Lun&ndash;Vie: 8:00&ndash;18:00</a></li>
+								<li><a href="#" title="Horario">S&#225;b: 8:00&ndash;13:00</a></li>
+							</ul>
+						</aside>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<aside class="widget widget_link">
+							<h3 class="widget-title">S&#205;GUENOS</h3>
+							<ul>
+								<li><a href="#" title="Facebook"><i class="fa fa-facebook" style="margin-right:8px;color:#FF8800;"></i>Facebook</a></li>
+								<li><a href="#" title="Instagram"><i class="fa fa-instagram" style="margin-right:8px;color:#FF8800;"></i>Instagram</a></li>
+								<li><a href="#" title="Twitter"><i class="fa fa-twitter" style="margin-right:8px;color:#FF8800;"></i>Twitter</a></li>
+								<li><a href="#" title="WhatsApp"><i class="fa fa-whatsapp" style="margin-right:8px;color:#FF8800;"></i>WhatsApp</a></li>
+							</ul>
+						</aside>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid no-padding copyright">
+				<p><i class="fa fa-copyright"></i> &copy; 2025 GRUPO EXPEDIA MOTORS, S.A. &mdash; GUATEMALA</p>
+			</div>
+		</footer>
+
+	</div>
+
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="libraries/lib.js"></script>
+	<script src="data/inventario.js"></script>
+	<script src="js/functions.js"></script>
+
+	<script>
+		$(document).ready(function() {
+			/* Poblar ambos selects con el inventario */
+			var opciones = '';
+			INVENTARIO.forEach(function(v) {
+				var texto = v.marca + ' ' + v.linea + ' ' + v.año + ' — ' + v.version + '  |  Q ' + Number(v.precio).toLocaleString('es-GT');
+				opciones += '<option value="' + v.precio + '" data-label="' + texto + '">' + texto + '</option>';
+			});
+			document.getElementById('pp-vehiculo-deseado').innerHTML += opciones;
+			document.getElementById('pp-calc-vehiculo').innerHTML += opciones;
+			ppCalcular();
+		});
+
+		function ppCalcular() {
+			var slider = document.getElementById('pp-slider-entrega');
+			var valEntrega = parseInt(slider.value) || 0;
+			var pct = ((slider.value - slider.min) / (slider.max - slider.min)) * 100;
+			slider.style.background = 'linear-gradient(to right,#FF8800 0%,#FF8800 ' + pct + '%,rgba(255,255,255,0.1) ' + pct + '%,rgba(255,255,255,0.1) 100%)';
+
+			document.getElementById('pp-val-entrega').textContent = 'Q ' + valEntrega.toLocaleString('es-GT');
+
+			/* Sincronizar ambos selects de vehículo deseado */
+			var selCalc  = document.getElementById('pp-calc-vehiculo');
+			var selForm  = document.getElementById('pp-vehiculo-deseado');
+			if (document.activeElement === selCalc) {
+				selForm.value = selCalc.value;
+			} else {
+				selCalc.value = selForm.value;
+			}
+
+			var precioDeseado = parseInt(selCalc.value) || 0;
+			var diferencia    = precioDeseado - valEntrega;
+			var elMonto  = document.getElementById('pp-diferencia');
+			var elNota   = document.getElementById('pp-diff-nota');
+
+			if (!precioDeseado) {
+				elMonto.textContent = 'Q 0';
+				elNota.textContent  = 'Selecciona un vehículo para calcular.';
+				return;
+			}
+			if (diferencia > 0) {
+				elMonto.textContent = 'Q ' + diferencia.toLocaleString('es-GT');
+				elNota.textContent  = 'Esta diferencia puede pagarse de contado o financiarse.';
+			} else if (diferencia < 0) {
+				elMonto.textContent = 'Q ' + Math.abs(diferencia).toLocaleString('es-GT') + ' a tu favor';
+				elNota.textContent  = 'Tu vehículo tiene mayor valor. Recibirías un crédito adicional.';
+			} else {
+				elMonto.textContent = 'Q 0 — Intercambio exacto';
+				elNota.textContent  = 'Los valores son equivalentes. Intercambio directo sin diferencia.';
+			}
+		}
+
+		function ppEnviar() {
+			var marca    = document.getElementById('pp-marca').value.trim();
+			var linea    = document.getElementById('pp-linea').value.trim();
+			var anio     = document.getElementById('pp-anio').value.trim();
+			var nombre   = document.getElementById('pp-nombre').value.trim();
+			var telefono = document.getElementById('pp-telefono').value.trim();
+
+			if (!marca || !linea || !anio || !nombre || !telefono) {
+				alert('Por favor completa los campos obligatorios (*): marca, línea, año, nombre y teléfono.');
+				return;
+			}
+
+			var km           = document.getElementById('pp-km').value.trim();
+			var transmision  = document.getElementById('pp-transmision').value;
+			var condicion    = document.getElementById('pp-condicion').value;
+			var descripcion  = document.getElementById('pp-descripcion').value.trim();
+			var email        = document.getElementById('pp-email').value.trim();
+			var selForm      = document.getElementById('pp-vehiculo-deseado');
+			var deseadoSel   = selForm.options[selForm.selectedIndex] ? selForm.options[selForm.selectedIndex].text : '';
+			var deseadoDesc  = document.getElementById('pp-describe-deseado').value.trim();
+			var slider       = document.getElementById('pp-slider-entrega');
+			var valEntrega   = 'Q ' + parseInt(slider.value).toLocaleString('es-GT');
+			var diferencia   = document.getElementById('pp-diferencia').textContent;
+
+			var msg = '🚗 *Solicitud de Parte de Pago — Expedia Motors*\n\n';
+			msg += '*Vehículo que entrego:*\n';
+			msg += '• Marca: ' + marca + '\n';
+			msg += '• Línea: ' + linea + '\n';
+			msg += '• Año: ' + anio + '\n';
+			if (km)          msg += '• Kilometraje: ' + km + '\n';
+			if (transmision) msg += '• Transmisión: ' + transmision + '\n';
+			if (condicion)   msg += '• Condición: ' + condicion + '\n';
+			if (descripcion) msg += '• Descripción: ' + descripcion + '\n';
+			msg += '• Valor estimado: ' + valEntrega + '\n\n';
+
+			msg += '*Vehículo que deseo:*\n';
+			if (deseadoSel && selForm.value) msg += '• ' + deseadoSel + '\n';
+			if (deseadoDesc) msg += '• Descripción: ' + deseadoDesc + '\n';
+			msg += '• Diferencia estimada: ' + diferencia + '\n\n';
+
+			msg += '*Datos de contacto:*\n';
+			msg += '• Nombre: ' + nombre + '\n';
+			msg += '• Teléfono: ' + telefono + '\n';
+			if (email) msg += '• Email: ' + email + '\n';
+
+			window.open('https://wa.me/50235695967?text=' + encodeURIComponent(msg), '_blank');
+
+			document.getElementById('pp-form-area').style.display = 'none';
+			var exito = document.getElementById('pp-exito');
+			exito.style.display = 'block';
+			window.scrollTo(0, exito.offsetTop - 100);
+		}
+	</script>
+
+	<a id="wa-btn" href="https://wa.me/50235695967" target="_blank" title="Escríbenos por WhatsApp"><i class="fa fa-whatsapp"></i></a>
+	<script src="js/buscador-navbar.js"></script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en" class=""><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+	<title>Expedia Motors - Inventario Individual</title>
+
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="images//favicon.ico" />
+	
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images//apple-touch-icon-114x114-precomposed.png">
+	
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images//apple-touch-icon-72x72-precomposed.png">
+	
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="images//apple-touch-icon-57x57-precomposed.png">	
+	
+	<!-- Library - Google Font Familys -->	
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="libraries/lightslider/lightslider.min.css" />
+	
+	<link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
+ 
+	<!-- RS5.0 Layers and Navigation Styles -->
+	<link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+	
+	
+	<!-- Library - Bootstrap v3.3.5 -->
+    <link rel="stylesheet" type="text/css" href="libraries/lib.css">
+	
+	<!-- Custom - Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">	
+	<link rel="stylesheet" type="text/css" href="css/plugins.css">
+	<link rel="stylesheet" type="text/css" href="css/navigation-menu.css">
+	<link rel="stylesheet" type="text/css" href="css/shortcode.css">
+	
+	<!--[if lt IE 9]>
+		<script src="js/html5/respond.min.js"></script>
+    <![endif]-->
+	
+</head>
+
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+	<div class="main-container">
+		<!-- Loader -->
+		<div id="site-loader" class="load-complete">
+			<div class="loader">
+				<div class="loader-inner ball-clip-rotate">
+					<div></div>
+				</div>
+			</div>
+		</div><!-- Loader /- -->
+		
+		<!-- Header Section -->
+		<header id="header" class="header-section container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<!-- Top Header -->
+				<div class="top-header container-fluid no-padding">
+					<div class="col-md-8 col-sm-12 col-xs-12 top-icons no-padding">
+						<a href="#"><img src="images/chat-ic.png" alt="Chat" /><span>Haz clic para</span><b>Chatear</b></a>
+						<a href="#"><img src="images/phone-ic.png" alt="Phone" /><span>Llámanos al</span><b>1-800-23-456-7890</b></a>
+						<ul>
+							<li><a href="#" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+					</div>
+				</div><!-- Top Header /- -->		
+				<!-- nav -->
+				<nav class="navbar navbar-default ow-navigation">
+					<div class="navbar-header">
+						<button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+							<span class="sr-only">Alternar navegación</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="Logo" /></a>
+					</div>
+					<!-- Menu Icon -->
+					<div class="menu-icon">
+						<div class="search">	
+							<a href="#" id="search" title="Buscar"><img src="images/search-ic.png" alt="Buscar" /></a>
+						</div>
+					</div><!-- Menu Icon /- -->
+					<div class="navbar-collapse collapse navbar-right" id="navbar">
+						<ul class="nav navbar-nav">
+							<li><a href="index.html" title="Inicio">Inicio</a></li>
+							<li><a href="about.html" title="Nosotros">Nosotros</a></li>
+							<li class="active"><a href="inventory.html" title="Inventario">Inventario</a></li>
+							<li><a href="vende.html" title="Vende tu auto">Vende tu auto</a></li><li><a href="parte-de-pago.html" title="Parte de pago">Parte de pago</a></li><li class="nav-cta"><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+							<li><a href="contactus.html" title="Contacto">Contacto</a></li>
+						</ul>
+					</div><!--/.nav-collapse -->
+				</nav><!-- nav /- -->
+				<!-- Search Box -->
+				<div class="search-box">
+					<span><i class="icon_close"></i></span>
+					<div class="sb-ai-panel">
+						<div class="sb-ai-inner">
+							<div class="sb-ai-header">
+								<div class="sb-ai-header-info">
+									<div class="sb-ai-avatar-hdr"><i class="fa fa-car"></i></div>
+									<div>
+										<div class="sb-ai-header-titulo">Expedia Motors</div>
+										<div class="sb-ai-header-sub"><span class="sb-ai-dot"></span> Asistente en l&#237;nea</div>
+									</div>
+								</div>
+							</div>
+							<div id="sb-mensajes" class="sb-mensajes"></div>
+							<div class="sb-input-area">
+								<input id="sb-input" type="text" placeholder="Ej: SUV Toyota autom&#225;tica nueva, pickup 4x4 usada..." onkeydown="if(event.key==='Enter') sbEnviar()" autocomplete="off" />
+								<button type="button" onclick="sbEnviar()"><i class="fa fa-paper-plane"></i></button>
+							</div>
+						</div>
+					</div>
+				</div><!-- Search Box /- -->
+			</div><!-- Container /- -->
+		</header><!-- Header Section /- -->
+
+		<main>
+		
+			<!-- Page Banner -->
+			<div class="container-fluid no-padding page-banner">
+				<div class="padding-90"></div>
+				<!-- Container -->
+				<div class="container">
+					<h3>inventario</h3>
+					<ol class="breadcrumb">
+						<li><a href="index.html">Inicio</a></li>
+						<li class="active" id="breadcrumb-vehiculo">inventario individual</li>
+					</ol>
+				</div><!-- Container /- -->
+				<div class="padding-100"></div>
+			</div><!-- Page Banner /- -->
+		
+			<div class="section-padding"></div>
+			
+			<!-- Container -->
+			<div class="container">
+				<!-- Row -->
+				<div class="row">
+					<div class="col-md-8 col-sm-8 col-xs-12 content-area">
+						<div class="inventory-slider">
+							<ul id="imageGallery" class="gallery">
+							</ul>
+						</div>
+						<div class="inventroy-content inventory-single">
+							<h3 id="veh-titulo">Cargando...</h3>
+							<div class="inv-box">
+								<span id="veh-año"></span>
+								<span id="veh-potencia"></span>
+								<span id="veh-transmision"></span>
+								<span id="veh-km"></span>
+							</div>
+							<h4>DESDE <b id="veh-precio">Q 0</b><a href="contactus.html" title="VER DETALLES">VER DETALLES  <i class="fa fa-angle-double-right"></i></a></h4>
+						</div>
+						<div class="inventory-tabs">
+							<!-- Nav tabs -->
+							<ul class="nav nav-tabs" role="tablist">
+								<li role="presentation" class="active"><a href="#specifications" role="tab" data-toggle="tab">especificaciones</a></li>
+								<li role="presentation"><a href="#overview" role="tab" data-toggle="tab">descripción general</a></li>
+								<li role="presentation"><a href="#locations" role="tab" data-toggle="tab">ubicaciones</a></li>
+							</ul>
+							<!-- Tab panes -->
+							<div class="tab-content">
+								<div role="tabpanel" class="tab-pane active" id="specifications">
+									<div id="tab-especificaciones"></div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="overview">
+									<div id="tab-descripcion"></div>
+								</div>
+								<div role="tabpanel" class="tab-pane" id="locations">
+									<p>Visítanos en <strong>Zona 10, Ciudad de Guatemala</strong>. Nuestros asesores te atenderán de lunes a viernes de 8:00 a 18:00 y sábados de 8:00 a 13:00. También puedes contactarnos vía WhatsApp al <strong>(502) 3569-5967</strong>.</p>
+								</div>
+							</div>
+							<div class="padding-50"></div>
+						</div>
+						
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-12 widget-area">
+						<aside class="widget widget_specifiaction">
+							<h3 class="widget-title">Especificaciones</h3>
+							<div class="specifications-content" id="specs-content">
+							</div>
+						</aside>
+						<aside class="widget widget_loan sloan">
+							<h3 class="widget-title">Financiamiento</h3>
+
+							<!-- Cuota destacada -->
+							<div class="sloan-cuota-box">
+								<p class="sloan-cuota-label">Cuota mensual estimada</p>
+								<span class="sloan-cuota-monto" id="sl-cuota">Q 0</span>
+							</div>
+
+							<!-- Precio del vehículo -->
+							<div class="sloan-campo">
+								<div class="sloan-label-row">
+									<label>Precio del vehículo</label>
+									<span class="sloan-valor" id="sl-precio-val">Q 89,999</span>
+								</div>
+								<input type="range" id="sl-precio" class="sloan-slider" min="20000" max="300000" step="1000" value="89999" oninput="calcularSloan()" />
+								<div class="sloan-extremos"><span>Q 20,000</span><span>Q 300,000</span></div>
+							</div>
+
+							<!-- Enganche -->
+							<div class="sloan-campo">
+								<div class="sloan-label-row">
+									<label>Enganche</label>
+									<span class="sloan-valor" id="sl-enganche-val">20%</span>
+								</div>
+								<input type="range" id="sl-enganche" class="sloan-slider" min="0" max="60" step="5" value="20" oninput="calcularSloan()" />
+								<div class="sloan-extremos"><span>0%</span><span>60%</span></div>
+							</div>
+
+							<!-- Tasa -->
+							<div class="sloan-campo">
+								<div class="sloan-label-row">
+									<label>Tasa anual</label>
+									<span class="sloan-valor" id="sl-tasa-val">14%</span>
+								</div>
+								<input type="range" id="sl-tasa" class="sloan-slider" min="5" max="30" step="0.5" value="14" oninput="calcularSloan()" />
+								<div class="sloan-extremos"><span>5%</span><span>30%</span></div>
+							</div>
+
+							<!-- Plazo -->
+							<div class="sloan-campo">
+								<label>Plazo (meses)</label>
+								<div class="sloan-plazo-btns">
+									<button class="sloan-plazo-btn" data-m="12" onclick="sloanPlazo(this)">12</button>
+									<button class="sloan-plazo-btn" data-m="24" onclick="sloanPlazo(this)">24</button>
+									<button class="sloan-plazo-btn sloan-plazo-btn--on" data-m="36" onclick="sloanPlazo(this)">36</button>
+									<button class="sloan-plazo-btn" data-m="48" onclick="sloanPlazo(this)">48</button>
+									<button class="sloan-plazo-btn" data-m="60" onclick="sloanPlazo(this)">60</button>
+									<button class="sloan-plazo-btn" data-m="72" onclick="sloanPlazo(this)">72</button>
+								</div>
+							</div>
+
+							<!-- Desglose -->
+							<div class="sloan-desglose">
+								<div class="sloan-fila">
+									<span>Enganche</span><strong id="sl-r-enganche">Q 0</strong>
+								</div>
+								<div class="sloan-fila">
+									<span>A financiar</span><strong id="sl-r-financiar">Q 0</strong>
+								</div>
+								<div class="sloan-fila">
+									<span>Intereses</span><strong id="sl-r-intereses" class="sloan-naranja">Q 0</strong>
+								</div>
+								<div class="sloan-fila sloan-fila--total">
+									<span>Total a pagar</span><strong id="sl-r-total">Q 0</strong>
+								</div>
+							</div>
+
+							<a href="contactus.html" class="sloan-cta">Solicitar financiamiento <i class="fa fa-angle-right"></i></a>
+						</aside>
+						<div class="padding-50"></div>
+					</div>
+				</div><!-- Row /- -->
+				<div class="padding-100"></div>
+			</div><!-- Container /- -->
+			
+		</main>
+	
+		
+						<!-- Footer Section -->
+		<footer class="footer-main container-fluid no-padding">
+			<!-- Container -->
+			<div class="container">
+				<div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
+					<a href="#" title="Logo"><img src="images/ftr-logo.png" alt="Logo" /></a>
+					<p style="color:#FF8800; font-weight:600; letter-spacing:1px; margin-top:10px;">Compra. Vende. Cambia.</p>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">NAVEGACI&#211;N</h3>
+							<ul>
+								<li><a href="about.html" title="Nosotros">Nosotros</a></li>
+								<li><a href="inventory.html" title="Inventario">Inventario</a></li>
+								<li><a href="vende.html" title="Vende tu auto">Vende tu auto</a></li>
+								<li><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+								<li><a href="blog.html" title="Blog">Blog</a></li>
+								<li><a href="contactus.html" title="Contacto">Contacto</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">VEH&#205;CULOS</h3>
+							<ul>
+								<li><a href="inventory.html" title="Autos Nuevos">Autos Nuevos</a></li>
+								<li><a href="inventory.html" title="Autos Usados">Autos Usados</a></li>
+								<li><a href="inventory.html" title="Camionetas">Camionetas</a></li>
+								<li><a href="inventory.html" title="Pickups">Pickups</a></li>
+								<li><a href="inventory.html" title="Sedanes">Sedanes</a></li>
+								<li><a href="financiamiento.html" title="Financiamiento">Financiamiento</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">CONTACTO</h3>
+							<ul>
+								<li><a href="contactus.html" title="Cont&#225;ctanos">Cont&#225;ctanos</a></li>
+								<li><a href="#" title="Ubicaci&#243;n">Zona 10, Guatemala</a></li>
+								<li><a href="tel:50235695967" title="Tel&#233;fono">(502) 3569-5967</a></li>
+								<li><a href="mailto:info@expediamotors.com" title="Email">info@expediamotors.com</a></li>
+								<li><a href="#" title="Horario">Lun&ndash;Vie: 8:00&ndash;18:00</a></li>
+								<li><a href="#" title="Horario">S&#225;b: 8:00&ndash;13:00</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-6">
+						<!-- Widget Link -->
+						<aside class="widget widget_link">
+							<h3 class="widget-title">S&#205;GUENOS</h3>
+							<ul>
+								<li><a href="#" title="Facebook"><i class="fa fa-facebook" style="margin-right:8px;color:#FF8800;"></i>Facebook</a></li>
+								<li><a href="#" title="Instagram"><i class="fa fa-instagram" style="margin-right:8px;color:#FF8800;"></i>Instagram</a></li>
+								<li><a href="#" title="Twitter"><i class="fa fa-twitter" style="margin-right:8px;color:#FF8800;"></i>Twitter</a></li>
+								<li><a href="#" title="WhatsApp"><i class="fa fa-whatsapp" style="margin-right:8px;color:#FF8800;"></i>WhatsApp</a></li>
+							</ul>
+						</aside><!-- Widget Link /- -->
+					</div>
+				</div>
+			</div><!-- Container /- -->
+
+			<!-- Copyright -->
+			<div class="container-fluid no-padding copyright">
+				<p><i class="fa fa-copyright"></i> &copy; 2025 GRUPO EXPEDIA MOTORS, S.A. &mdash; GUATEMALA</p>
+			</div><!-- Copyright /- -->
+		</footer><!-- Footer Section /- -->
+		
+	</div>
+	
+	<!-- JQuery v1.12.4 -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+
+	<!-- Library - Js -->
+	<script src="libraries/lib.js"></script>
+	<script src="libraries/lightslider/lightslider.min.js"></script>
+	
+	<!-- RS5.0 Core JS Files -->
+	<script type="text/javascript" src="revolution/js/jquery.themepunch.tools.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="revolution/js/jquery.themepunch.revolution.min.js?rev=5.0"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.video.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+	<script type="text/javascript" src="revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+	
+	<!-- Library - Google Map API -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCf0dPCQ0C7oVF0WFKhuyz7v7oWei3vFPI "></script>
+	
+	<!-- Datos del inventario (cargado antes de functions.js para que la galería exista al inicializar lightSlider) -->
+	<script src="data/inventario.js"></script>
+	<script>
+		function poblarVehiculo() {
+			var params = new URLSearchParams(window.location.search);
+			var id     = parseInt(params.get('id')) || 1;
+			var v      = null;
+			for (var i = 0; i < INVENTARIO.length; i++) {
+				if (INVENTARIO[i].id === id) { v = INVENTARIO[i]; break; }
+			}
+			if (!v) v = INVENTARIO[0];
+
+			/* Galería */
+			var thumbs  = ['images/inventroy-single-thumb1.png', 'images/inventroy-single-thumb2.png', 'images/inventroy-single-thumb3.png', 'images/inventroy-single-thumb4.png'];
+			var gallery = document.getElementById('imageGallery');
+			gallery.innerHTML = v.imagenes.map(function(img, idx) {
+				return '<li data-thumb="' + (thumbs[idx] || img) + '"><img src="' + img + '" alt="' + v.marca + ' ' + v.linea + '" /></li>';
+			}).join('');
+
+			/* Título y breadcrumb */
+			document.getElementById('veh-titulo').textContent        = v.marca + ' ' + v.linea + ' ' + v.version;
+			document.getElementById('breadcrumb-vehiculo').textContent = v.marca + ' ' + v.linea + ' ' + v.año;
+
+			/* Specs bar */
+			var kmTxt = v.km === 0 ? '0 km' : Number(v.km).toLocaleString('es-GT') + ' km';
+			document.getElementById('veh-año').textContent        = v.año;
+			document.getElementById('veh-potencia').textContent   = v.potencia;
+			document.getElementById('veh-transmision').textContent = v.transmision;
+			document.getElementById('veh-km').textContent         = kmTxt;
+
+			/* Precio */
+			document.getElementById('veh-precio').textContent = 'Q ' + Number(v.precio).toLocaleString('es-GT');
+
+			/* Tabs */
+			var descHTML = '<p>' + v.descripcion + '</p>';
+			document.getElementById('tab-especificaciones').innerHTML = descHTML;
+			document.getElementById('tab-descripcion').innerHTML      = descHTML;
+
+			/* Sidebar especificaciones */
+			document.getElementById('specs-content').innerHTML =
+				'<p><span>Condición:</span>'    + v.condicion   + '</p>' +
+				'<p><span>Año:</span>'           + v.año         + '</p>' +
+				'<p><span>Marca:</span>'         + v.marca       + '</p>' +
+				'<p><span>Línea:</span>'         + v.linea       + '</p>' +
+				'<p><span>Versión:</span>'       + v.version     + '</p>' +
+				'<p><span>Precio:</span>Q '      + Number(v.precio).toLocaleString('es-GT') + '</p>' +
+				'<p><span>Motor:</span>'         + v.motor       + '</p>' +
+				'<p><span>Transmisión:</span>'   + v.transmision + '</p>' +
+				'<p><span>Potencia:</span>'      + v.potencia    + '</p>' +
+				'<p><span>Cilindros:</span>'     + v.cilindros   + '</p>' +
+				'<p><span>Combustible:</span>'   + v.combustible + '</p>' +
+				'<p><span>Color:</span>'         + v.color       + '</p>' +
+				'<p><span>Kilometraje:</span>'   + kmTxt         + '</p>' +
+				'<p><span>Vel. Máxima:</span>'   + v.velocidad_max + '</p>';
+
+			/* Inicializar calculadora con el precio del vehículo */
+			var slPrecio = document.getElementById('sl-precio');
+			if (slPrecio) {
+				slPrecio.max   = Math.max(300000, v.precio + 50000);
+				slPrecio.value = v.precio;
+				if (typeof calcularSloan === 'function') calcularSloan();
+			}
+		}
+
+		$(document).ready(poblarVehiculo);
+	</script>
+
+	<!-- Library - Theme JS -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		var sloanMeses = 36;
+
+		function fmtSloan(n) {
+			return 'Q ' + Math.round(n).toLocaleString('es-GT');
+		}
+
+		function sloanPlazo(btn) {
+			document.querySelectorAll('.sloan-plazo-btn').forEach(function(b) {
+				b.classList.remove('sloan-plazo-btn--on');
+			});
+			btn.classList.add('sloan-plazo-btn--on');
+			sloanMeses = parseInt(btn.getAttribute('data-m'));
+			calcularSloan();
+		}
+
+		function calcularSloan() {
+			var precio      = parseInt(document.getElementById('sl-precio').value);
+			var enganchePct = parseInt(document.getElementById('sl-enganche').value);
+			var tasaAnual   = parseFloat(document.getElementById('sl-tasa').value);
+			var meses       = sloanMeses;
+
+			var enganche  = precio * enganchePct / 100;
+			var principal = precio - enganche;
+			var r         = tasaAnual / 100 / 12;
+
+			var cuota = (r === 0)
+				? principal / meses
+				: principal * (r * Math.pow(1 + r, meses)) / (Math.pow(1 + r, meses) - 1);
+
+			var totalPagar     = cuota * meses;
+			var totalIntereses = totalPagar - principal;
+
+			document.getElementById('sl-precio-val').textContent    = fmtSloan(precio);
+			document.getElementById('sl-enganche-val').textContent   = enganchePct + '%  ·  ' + fmtSloan(enganche);
+			document.getElementById('sl-tasa-val').textContent       = tasaAnual + '%';
+			document.getElementById('sl-cuota').textContent          = fmtSloan(cuota);
+			document.getElementById('sl-r-enganche').textContent     = fmtSloan(enganche);
+			document.getElementById('sl-r-financiar').textContent    = fmtSloan(principal);
+			document.getElementById('sl-r-intereses').textContent    = fmtSloan(totalIntereses);
+			document.getElementById('sl-r-total').textContent        = fmtSloan(totalPagar);
+
+			/* Fill sliders */
+			['sl-precio', 'sl-enganche', 'sl-tasa'].forEach(function(id) {
+				var s = document.getElementById(id);
+				var pct = ((s.value - s.min) / (s.max - s.min)) * 100;
+				s.style.background = 'linear-gradient(to right,#FF8800 0%,#FF8800 ' + pct + '%,rgba(0,0,0,0.12) ' + pct + '%,rgba(0,0,0,0.12) 100%)';
+			});
+		}
+
+	</script>
+
+<a id="wa-btn" href="https://wa.me/50235695967" target="_blank" title="Escríbenos por WhatsApp"><i class="fa fa-whatsapp"></i></a>
+<script src="js/buscador-navbar.js"></script></body>
+</html>
