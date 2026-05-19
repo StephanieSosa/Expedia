@@ -5342,3 +5342,13 @@
     .pp-form-box { padding: 24px 18px; }
     .pp-calc-box { padding: 24px 18px; margin-top: 28px; }
 }
+
+/* Logo Expedia Motors */
+.ow-navigation .navbar-brand img {
+    height: 52px !important;
+    width: auto !important;
+}
+.footer-main .logo-block img {
+    height: 52px !important;
+    width: auto !important;
+}
