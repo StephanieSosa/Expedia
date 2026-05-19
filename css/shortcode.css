@@ -5343,7 +5343,7 @@
     .pp-calc-box { padding: 24px 18px; margin-top: 28px; }
 }
 
-/* Logo Expedia Motors */
+/* Logo Expedia Motors — responsive */
 .ow-navigation .navbar-brand img {
     height: 52px !important;
     width: auto !important;
@@ -5351,4 +5351,32 @@
 .footer-main .logo-block img {
     height: 52px !important;
     width: auto !important;
+}
+
+@media (max-width: 991px) {
+    .ow-navigation .navbar-brand img {
+        height: 42px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .ow-navigation .navbar-brand img {
+        height: auto !important;
+        width: auto !important;
+        max-height: 34px !important;
+        max-width: 160px !important;
+        object-fit: contain !important;
+    }
+    .ow-navigation .navbar-brand {
+        padding-top: 8px !important;
+        padding-bottom: 8px !important;
+    }
+}
+
+/* Fondo del footer — forzado para todas las páginas */
+.footer-main {
+    background-image: url("../images/ftr-bg.jpg") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: top center !important;
 }

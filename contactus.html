@@ -42,7 +42,16 @@
 	<!--[if lt IE 9]>
 		<script src="js/html5/respond.min.js"></script>
     <![endif]-->
-	
+
+	<style>
+		.footer-main {
+			background-image: url('images/ftr-bg.jpg') !important;
+			background-repeat: no-repeat !important;
+			background-size: cover !important;
+			background-position: top center !important;
+		}
+	</style>
+
 </head>
 
 <body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
@@ -180,7 +189,7 @@
 	
 		
 						<!-- Footer Section -->
-		<footer class="footer-main container-fluid no-padding">
+		<footer class="footer-main container-fluid no-padding" style="background-image: url('images/ftr-bg.jpg'); background-size: cover; background-position: top center; background-repeat: no-repeat;">
 			<!-- Container -->
 			<div class="container">
 				<div class="logo-block col-md-12 col-sm-12 col-xs-12 no-padding">
@@ -269,6 +278,17 @@
 <a id="wa-btn" href="https://wa.me/50235695967" target="_blank" title="Escríbenos por WhatsApp"><i class="fa fa-whatsapp"></i></a>
 
 <script src="js/buscador-navbar.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var footer = document.querySelector('.footer-main');
+    if (footer) {
+        footer.style.setProperty('background-image', "url('images/ftr-bg.jpg')", 'important');
+        footer.style.setProperty('background-size', 'cover', 'important');
+        footer.style.setProperty('background-position', 'top center', 'important');
+        footer.style.setProperty('background-repeat', 'no-repeat', 'important');
+    }
+});
+</script>
 </body>
 </html>
 
