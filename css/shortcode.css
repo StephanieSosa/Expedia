@@ -5350,6 +5350,9 @@
     .pp-calc-box { padding: 24px 18px; margin-top: 28px; }
 }
 
+/* Evitar que el modo oscuro del navegador oculte elementos */
+:root { color-scheme: light; }
+
 /* Logo Expedia Motors — responsive */
 .ow-navigation .navbar-brand img {
     height: 52px !important;
