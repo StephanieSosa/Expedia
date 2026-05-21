@@ -5107,10 +5107,10 @@
     background: #0f0f0f !important;
     background-color: #0f0f0f !important;
 }
-/* Close button: aligned with centered content on all screen sizes */
+/* Close button: alineado al borde derecho del panel */
 .search-box > span {
     position: absolute !important;
-    right: max(16px, calc(50vw - 316px)) !important;
+    right: 40px !important;
     top: 18px !important;
     width: 32px; height: 32px;
     background: rgba(255,255,255,0.06);
@@ -5127,8 +5127,7 @@
 
 .sb-ai-panel { width: 100%; }
 .sb-ai-inner {
-    max-width: 680px; margin: 0 auto;
-    padding: 0 24px 24px;
+    padding: 0 40px 24px;
     display: flex; flex-direction: column;
     height: calc(100vh - 58px); max-height: 600px;
 }
@@ -5136,12 +5135,11 @@
 .sb-ai-header { padding: 16px 0 14px; border-bottom: 1px solid rgba(255,255,255,0.06); flex-shrink: 0; }
 .sb-ai-header-info { display: flex; align-items: center; gap: 12px; }
 .sb-ai-avatar-hdr {
-    width: 36px; height: 36px; border-radius: 10px;
-    background: linear-gradient(135deg, #FF8800, #e06000);
-    display: flex; align-items: center; justify-content: center;
-    color: #fff; font-size: 15px; flex-shrink: 0;
-    box-shadow: 0 4px 12px rgba(255,136,0,0.3);
+    width: 40px; height: 40px; border-radius: 50%;
+    background: #1a1a1a url('../images/icon-expedia.png') center / 82% no-repeat;
+    flex-shrink: 0;
 }
+.sb-ai-avatar-hdr img { display: none; }
 .sb-ai-header-titulo { font-family: 'Poppins', sans-serif; font-size: 13px; font-weight: 700; color: #fff; line-height: 1.2; }
 .sb-ai-header-sub { display: flex; align-items: center; gap: 5px; font-family: 'Poppins', sans-serif; font-size: 10.5px; color: rgba(255,255,255,0.4); margin-top: 2px; }
 .sb-ai-dot { width: 6px; height: 6px; border-radius: 50%; background: #4cd964; animation: sbDotOnline 2s infinite; }
@@ -5156,14 +5154,13 @@
 .sb-msg { display: flex; align-items: flex-end; gap: 10px; }
 .sb-msg--user { flex-direction: row-reverse; }
 .sb-avatar {
-    width: 30px; height: 30px; border-radius: 8px;
-    background: linear-gradient(135deg, #FF8800, #e06000);
-    color: #fff; font-size: 13px;
-    display: flex; align-items: center; justify-content: center;
-    flex-shrink: 0; box-shadow: 0 3px 8px rgba(255,136,0,0.3);
+    width: 36px; height: 36px; border-radius: 50%;
+    background: #1a1a1a url('../images/icon-expedia.png') center / 82% no-repeat;
+    flex-shrink: 0;
 }
+.sb-avatar img { display: none; }
 .sb-burbuja {
-    max-width: 75%;
+    max-width: 60%;
     background: rgba(255,255,255,0.05);
     border: 1px solid rgba(255,255,255,0.07);
     border-left: 2px solid rgba(255,136,0,0.35);
@@ -5225,6 +5222,16 @@
 .sb-input-area > button:hover { opacity: 0.85; transform: scale(1.08); }
 
 #wa-btn { bottom: 30px !important; }
+
+@media (max-width: 767px) {
+    #wa-btn {
+        width: 56px !important;
+        height: 56px !important;
+        font-size: 28px !important;
+        bottom: 24px !important;
+        right: 16px !important;
+    }
+}
 
 @media (max-width: 767px) {
     .sb-ai-inner { padding: 0 14px 16px; max-height: calc(100vh - 58px); }

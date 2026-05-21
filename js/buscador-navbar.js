@@ -231,7 +231,7 @@ function _sbMsgBot(html, delay) {
         var div = document.createElement('div');
         div.className = 'sb-msg sb-msg--bot';
         div.innerHTML =
-            '<div class="sb-avatar"><i class="fa fa-car"></i></div>' +
+            '<div class="sb-avatar"><img src="images/logo-expedia.png" alt="Expedia Motors" /></div>' +
             '<div class="sb-burbuja">' + html + '</div>';
         msgs.appendChild(div);
         msgs.scrollTop = msgs.scrollHeight;
@@ -255,7 +255,7 @@ function _sbPensando() {
     div.className = 'sb-msg sb-msg--bot';
     div.id = 'sb-typing-msg';
     div.innerHTML =
-        '<div class="sb-avatar"><i class="fa fa-car"></i></div>' +
+        '<div class="sb-avatar"><img src="images/logo-expedia.png" alt="Expedia Motors" /></div>' +
         '<div class="sb-burbuja"><div class="sb-typing"><span></span><span></span><span></span></div></div>';
     msgs.appendChild(div);
     msgs.scrollTop = msgs.scrollHeight;
@@ -398,6 +398,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 jQuery(panel).removeClass('active');
                 var input = document.getElementById('sb-input');
                 if (input) input.value = '';
+                _sbMostrarWa();
+                _sbMostrarHeader();
             });
         }
     }
@@ -408,7 +410,29 @@ document.addEventListener('DOMContentLoaded', function() {
             e.preventDefault();
             if (!panel) return;
             panel.style.display = 'block';
+            _sbOcultarWa();
+            _sbOcultarHeader();
             setTimeout(_sbIniciarChat, 50);
         });
     }
 });
+
+function _sbOcultarWa() {
+    var wa = document.getElementById('wa-btn');
+    if (wa) wa.style.display = 'none';
+}
+
+function _sbMostrarWa() {
+    var wa = document.getElementById('wa-btn');
+    if (wa) wa.style.display = '';
+}
+
+function _sbOcultarHeader() {
+    var nav = document.querySelector('.ow-navigation');
+    if (nav) nav.style.visibility = 'hidden';
+}
+
+function _sbMostrarHeader() {
+    var nav = document.querySelector('.ow-navigation');
+    if (nav) nav.style.visibility = '';
+}
