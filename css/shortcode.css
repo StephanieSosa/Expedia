@@ -5092,7 +5092,7 @@
     left: 0 !important;
     right: 0 !important;
     width: 100% !important;
-    max-height: calc(100vh - 58px) !important;
+    max-height: calc(var(--sb-vh, 100vh) - 58px) !important;
     overflow-y: auto !important;
     background: #0f0f0f !important;
     background-color: #0f0f0f !important;
@@ -5129,7 +5129,7 @@
 .sb-ai-inner {
     padding: 0 40px 24px;
     display: flex; flex-direction: column;
-    height: calc(100vh - 58px); max-height: 600px;
+    height: calc(var(--sb-vh, 100vh) - 58px); max-height: 600px;
 }
 
 .sb-ai-header { padding: 16px 0 14px; border-bottom: 1px solid rgba(255,255,255,0.06); flex-shrink: 0; }
@@ -5234,7 +5234,11 @@
 }
 
 @media (max-width: 767px) {
-    .sb-ai-inner { padding: 0 14px 16px; max-height: calc(100vh - 58px); }
+    .sb-ai-inner {
+        padding: 0 14px 16px;
+        height: calc(var(--sb-vh, 100vh) - 58px);
+        max-height: calc(var(--sb-vh, 100vh) - 58px);
+    }
     .sb-burbuja { max-width: 85%; font-size: 12px; }
 }
 

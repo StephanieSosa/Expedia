@@ -379,6 +379,13 @@ function _sbIniciarChat() {
     );
 }
 
+/* ---- Corregir 100vh en móvil (Chrome/Android oculta el input detrás de la barra del nav) ---- */
+function _sbActualizarVh() {
+    document.documentElement.style.setProperty('--sb-vh', window.innerHeight + 'px');
+}
+_sbActualizarVh();
+window.addEventListener('resize', _sbActualizarVh);
+
 /* ---- Conectar con el toggle del search-box ---- */
 document.addEventListener('DOMContentLoaded', function() {
     var panel = document.querySelector('.search-box');
